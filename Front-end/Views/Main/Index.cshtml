@@ -1,0 +1,69 @@
+﻿@model List<Project>;
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <div class="main-part-container">
+            <div class="siteText-container">
+                <h2>
+                    In today's world, we have to be more productive than ever before.<br />
+                    And you can't do this without a SIMPLE solution.<br />
+                    That's why we've created this brand new TODO list.
+                </h2>
+            </div>
+
+            <div class="buttons-container">
+                <div class="button-container">
+                    <a asp-controller="Projects" asp-action="Index">
+                        <button>
+                            Create new Project
+                        </button>
+                    </a>
+                </div>
+                <div class="button-container">
+                    <a asp-action="CreateTaskPanel" asp-controller="Tasks">
+                        <button>Create new Task</button>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="pList-container" id="projects-container">
+
+            @foreach(var project in Model){
+                <div class="project-container">
+                <div class="square">
+                    <h1>@project.Name</h1>
+                    <p>Priority: @project.Priority</p>
+
+                    <div class="project-btns">
+                        <div>
+                            <a asp-controller="Projects"
+                           asp-action="ShowProject" asp-route-id="@project.Id"
+                           class="button">More</a>
+                        </div>
+                        <div>
+                            <a asp-controller="Projects"
+                           asp-action="DeleteProject" asp-route-id="@project.Id"
+                           class="button">Delete</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+            }
+
+        </div>
+
+
+
+
+
+    </body>
+</html>
+
+

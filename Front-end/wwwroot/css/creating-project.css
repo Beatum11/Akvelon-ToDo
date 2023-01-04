@@ -1,0 +1,22 @@
+﻿body {
+}
+
+.mb-3{
+    margin-top: 25px;
+}
+
+.form-control:focus {
+    border-color: #E96719 !important;
+    box-shadow: inset 0 0 0 1px #E96719 !important;
+    border-bottom: 1px solid #E96719 !important;
+}
+
+.creatingP-zone-button {
+    text-align: right;
+}
+
+.project-btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

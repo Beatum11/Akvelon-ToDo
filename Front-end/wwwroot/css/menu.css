@@ -1,0 +1,41 @@
+﻿body {
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid black;
+}
+
+    .menu-container ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+
+        .menu-container ul li {
+            padding: 6px 0;
+            margin-right: 50px;
+        }
+
+.menu-container ul li a {
+    --fill-color: #000000;
+     position: relative;
+     display: block;
+    padding: 4px 0;
+    font: 700 3rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+     color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.5s linear;
+}
+
+.menu-container ul li a:hover {
+   background-size: 100%;
+}

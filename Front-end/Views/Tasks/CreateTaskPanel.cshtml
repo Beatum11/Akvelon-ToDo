@@ -1,0 +1,54 @@
+﻿@model TaskItem;
+
+<html>
+    <body>
+
+      <form asp-action="AddTask" asp-controller="Tasks">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">
+                    Name of the Task:
+                </label>
+                <input type="text" asp-for="@Model.Name"
+                    class="form-control" id="exampleFormControlInput1"
+                 placeholder="#Some Name"/>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">
+                    Name of the Project:
+                </label>
+                <input type="text" class="form-control" asp-for="@Model.ProjectName"
+                id="exampleFormControlInput1"
+                 placeholder="#movies_to_watch"/>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">
+                    Description of the Task:
+                </label>
+                <textarea class="form-control" asp-for="@Model.Description"
+                id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="@Model.Priority">
+                    Priority:
+                </label>
+                <input asp-for="@Model.Priority"
+                       type="number" id="Priority"
+                       name="Priority">
+            </div>
+
+            <div className="creatingP-zone-button">
+                <div class="button-container">
+                    <a>
+                        <button type="submit">Create task</button>
+                    </a>
+                </div>
+            </div>
+      </form>
+
+    </body>
+</html>
+
+

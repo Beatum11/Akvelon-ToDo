@@ -1,0 +1,18 @@
+﻿body {
+}
+
+.container-for-shit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.shit-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.test-task-shit button {
+    margin-right: 30px;
+}

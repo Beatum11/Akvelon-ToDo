@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akv-API", "Akv-API\Akv-API.csproj", "{AC890605-7765-4BE1-9EA9-725D93C30A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Front-end", "Front-end\Front-end.csproj", "{282099BD-91BD-4F88-9162-DC9FCEA23AD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC890605-7765-4BE1-9EA9-725D93C30A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC890605-7765-4BE1-9EA9-725D93C30A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC890605-7765-4BE1-9EA9-725D93C30A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC890605-7765-4BE1-9EA9-725D93C30A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282099BD-91BD-4F88-9162-DC9FCEA23AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282099BD-91BD-4F88-9162-DC9FCEA23AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282099BD-91BD-4F88-9162-DC9FCEA23AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282099BD-91BD-4F88-9162-DC9FCEA23AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67D600F0-2A13-47AD-8146-A902A1AB31E2}
+	EndGlobalSection
+EndGlobal

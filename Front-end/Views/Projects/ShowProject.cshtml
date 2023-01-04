@@ -1,0 +1,63 @@
+﻿@model dynamic;
+
+<html>
+    <body>
+        <div className="insideP-container">
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" 
+                            asp-action="Index"
+                            asp-controller="Main">
+                            Back
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Project name: @Model.Proj.Name </h5>
+
+                <div class="pList-container">
+                    @foreach(var task in Model.TaskItems){
+                        <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">@task.Name</h5>
+                                <p class="card-text">
+                                    @task.Description
+                                </p>
+
+                                <div class="task-body">
+                                  <p>Priority: @task.Priority</p>
+                                  <p>Current state: @task.Status</p>
+
+                                  <a 
+                                   asp-action="EditTaskPanel" asp-controller="Tasks"
+                                   asp-route-id="@task.Id"
+                                   class="btn btn-danger">Edit
+                                  </a>
+
+                                  <a asp-action="DeleteTask" asp-controller="Tasks"
+                                  asp-route-id="@task.Id"
+                                  class="btn btn-dark">Done</a>
+                                </div>
+                                
+                                
+                              
+                              </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
